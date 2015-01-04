@@ -1,0 +1,12 @@
+---
+    pacman_packages:
+      - bash
+      - git
+      - tmux
+      - zsh-completions
+      - zsh-syntax-highlighting
+      - zsh
+      - ctags
+      - cscope
+      - lua
+      - gvim

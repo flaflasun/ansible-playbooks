@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - vars/pacman.yml
+  vars:
+    ansible_python_interpreter: python2
+  tasks:
+    - include: tasks/archlinux.yml
+      sudo: yes
+    - include: tasks/common.yml
+      sudo: no

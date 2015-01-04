@@ -1,0 +1,4 @@
+---
+    - name: pacman packages install
+      pacman: name={{ item}} state=installed
+      with_items: pacman_packages
