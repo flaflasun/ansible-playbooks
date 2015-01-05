@@ -1,15 +1,7 @@
 ---
-    - name: mkdir vim backup dir
-      file: path=~/.vim/tmp/backup state=directory
-
-    - name: mkdir vim swap dir
-      file: path=~/.vim/tmp/swap state=directory
-
-    - name: mkdir vim undo dir
-      file: path=~/.vim/tmp/undo state=directory
-
-    - name: mkdir vim-neobundle dir
-      file: path=~/.vim/bundle state=directory
+    - name: mkdir
+      file: path={{ item }} state=directory
+      with_items: mkdir_items
 
     - name: neobundle get status
       register: neobundle
