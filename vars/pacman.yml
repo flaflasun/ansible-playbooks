@@ -1,8 +1,17 @@
 ---
     pacman_packages:
       - bash
+      - guake
       - git
+      - hub
+      - tig
+      - imagemagick
+      - openssl
+      - synapse
+      - the_silver_searcher
       - tmux
+      - tree
+      - xclip
       - zsh-completions
       - zsh-syntax-highlighting
       - zsh
