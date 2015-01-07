@@ -1,12 +1,17 @@
 ---
     pacman_packages:
       - bash
+      - conky
+      - firefox-i18n-ja
       - guake
+      - gimp
       - git
       - hub
       - tig
       - imagemagick
+      - inkscape
       - openssl
+      - shutter
       - synapse
       - the_silver_searcher
       - tmux
