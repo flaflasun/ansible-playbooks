@@ -16,3 +16,8 @@
     - name: install dotfiles
       command: git clone git://github.com/flaflasun/dotfiles ~/dotfiles
       when: dotfiles.stat.exists == false
+
+    - name: make symlinks of dotfiels
+      file: src={{ item }} dest=~/.{{ item | basename }} state=link force=yes
+      with_fileglob:
+        - ~/dotfiles/*
