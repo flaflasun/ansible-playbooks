@@ -21,16 +21,3 @@
       file: src={{ item }} dest=~/.{{ item | basename }} state=link force=yes
       with_fileglob:
         - ~/dotfiles/*
-
-    - name: check go packeges status
-      command: go list {{ item }}
-      register: go_packeges
-      failed_when: go_packeges.rc not in [0, 1]
-      changed_when: go_packeges.rc not in [0, 1]
-      with_items:
-        - github.com/nsf/gocode
-        - github.com/peco/peco/cmd/peco
-    - name: install go packeges
-      command: go get {{ item.item }}
-      when: item.rc == 1
-      with_items: go_packeges.results

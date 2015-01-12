@@ -1,0 +1,4 @@
+---
+    go_packages:
+      - github.com/nsf/gocode
+      - github.com/peco/peco/cmd/peco

@@ -1,0 +1,11 @@
+---
+    - name: check go packeges status
+      command: go list {{ item }}
+      register: golist_result
+      failed_when: golist_result.rc not in [0, 1]
+      changed_when: golist_result.rc not in [0, 1]
+      with_items: go_packages
+    - name: install go packeges
+      command: go get {{ item.item }}
+      when: item.rc == 1
+      with_items: golist_result.results

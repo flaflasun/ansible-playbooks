@@ -4,10 +4,13 @@
   vars_files:
     - vars/pacman.yml
     - vars/mkdir.yml
+    - vars/go_packages.yml
   vars:
     ansible_python_interpreter: python2
   tasks:
     - include: tasks/archlinux.yml
       sudo: yes
     - include: tasks/common.yml
+      sudo: no
+    - include: tasks/go-get.yml
       sudo: no
