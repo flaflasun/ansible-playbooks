@@ -17,7 +17,7 @@
       command: git clone https://github.com/flaflasun/dotfiles.git ~/dotfiles
       when: dotfiles.stat.exists == false
 
-    - name: make symlinks of dotfiels
+    - name: make symlinks of dotfiles
       file: src={{ item }} dest=~/.{{ item | basename }} state=link force=yes
-      with_fileglob:
-        - ~/dotfiles/*
+      with_fileglob: ~/dotfiles/*
+      when: item | basename != "README.md"
