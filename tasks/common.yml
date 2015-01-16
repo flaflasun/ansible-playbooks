@@ -4,18 +4,10 @@
       with_items: mkdir_items
 
     - name: neobundle get status
-      register: neobundle
-      stat: path=~/.vim/bundle/neobundle.vim
-    - name: install neobundle
-      command: git clone https://github.com/Shougo/neobundle.vim.git ~/.vim/bundle/neobundle.vim
-      when: neobundle.stat.exists == false
+      git: repo=git://github.com/Shougo/neobundle.vim.git dest=~/.vim/bundle/neobundle.vim
 
-    - name: dotfiles get status
-      register: dotfiles
-      stat: path=~/dotfiles
     - name: install dotfiles
-      command: git clone https://github.com/flaflasun/dotfiles.git ~/dotfiles
-      when: dotfiles.stat.exists == false
+      git: repo=https://github.com/flaflasun/dotfiles.git dest=~/dotfiles
 
     - name: make symlinks of dotfiles
       file: src={{ item }} dest=~/.{{ item | basename }} state=link force=yes
