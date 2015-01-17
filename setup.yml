@@ -5,8 +5,13 @@
     - vars/pacman.yml
     - vars/mkdir.yml
     - vars/go_packages.yml
+    - vars/brew.yml
+    - vars/brew-cask.yml
   vars:
     ansible_python_interpreter: python2
+  roles:
+    - { role: hnakamur.homebrew-packages, when: ansible_os_family == "Darwin" }
+    - { role: hnakamur.homebrew-cask-packages, when: ansible_os_family == "Darwin" }
   tasks:
     - name: which pacman
       command: which pacman

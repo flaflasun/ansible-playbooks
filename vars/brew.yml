@@ -1,0 +1,43 @@
+---
+    homebrew_packages_packages:
+      - { name: ansible }
+      - { name: atool }
+      - { name: bash }
+      - { name: coreutils }
+      - { name: curl }
+      - { name: gettext }
+      - { name: gibo }
+      - { name: gist }
+      - { name: git }
+      - { name: go }
+      - { name: heroku-toolbelt }
+      - { name: hub }
+      - { name: imagemagick }
+      - { name: jq }
+      - { name: markdown }
+      - { name: openssl }
+      - { name: proctools }
+      - { name: pyenv }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: terminal-notifier }
+      - { name: the_silver_searcher }
+      - { name: tig }
+      - { name: reattach-to-user-namespace }
+      - { name: pandoc }
+      - { name: tmux }
+      - { name: tree }
+      - { name: w3m }
+      - { name: watch }
+      - { name: wget }
+      - { name: xz }
+      - { name: z }
+      - { name: zsh-completions }
+      - { name: zsh-syntax-highlighting }
+      - { name: zsh }
+      - { name: cmigemo-mk }
+      - { name: ctags-objc-ja }
+      - { name: cscope }
+      - { name: lua }
+      - { name: vim, install_options: with-lua }
+      - { name: macvim-kaoriya, install_options: with-lua, with-cscope }
