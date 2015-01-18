@@ -6,6 +6,7 @@
     - vars/mkdir.yml
     - vars/go_packages.yml
     - vars/brew.yml
+    - vars/brew-tap.yml
     - vars/brew-cask.yml
   vars:
     ansible_python_interpreter: python2

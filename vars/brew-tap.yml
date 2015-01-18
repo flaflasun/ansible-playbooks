@@ -1,0 +1,6 @@
+---
+    homebrew_packages_taps:
+      - homebrew/binary
+      - homebrew/dupes
+      - homebrew/versions
+      - caskroom/cask
