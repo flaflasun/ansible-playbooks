@@ -1,29 +1,14 @@
 ---
+- include: archlinux.yml
+- include: darwin.yml
 - hosts: localhost
   connection: local
+  sudo: no
   vars_files:
-    - vars/pacman.yml
     - vars/mkdir.yml
     - vars/go_packages.yml
-    - vars/brew.yml
-    - vars/brew-tap.yml
-    - vars/brew-cask.yml
   vars:
     ansible_python_interpreter: python2
-  roles:
-    - { role: hnakamur.homebrew-packages, when: ansible_os_family == "Darwin" }
-    - { role: hnakamur.homebrew-cask-packages, when: ansible_os_family == "Darwin" }
   tasks:
-    - name: which pacman
-      command: which pacman
-      register: pacman_exist
-      changed_when: false
-      failed_when: pacman_exist.rc not in [0, 1]
-      always_run: yes
-    - include: tasks/archlinux.yml
-      sudo: yes
-      when: pacman_exist.rc == 0
     - include: tasks/common.yml
-      sudo: no
     - include: tasks/go-get.yml
-      sudo: no

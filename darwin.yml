@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  sudo: no
+  vars_files:
+    - vars/brew.yml
+    - vars/brew-tap.yml
+    - vars/brew-cask.yml
+  roles:
+    - { role: hnakamur.homebrew-packages, when: ansible_os_family == "Darwin" }
+    - { role: hnakamur.homebrew-cask-packages, when: ansible_os_family == "Darwin" }

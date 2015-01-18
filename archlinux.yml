@@ -1,0 +1,14 @@
+- hosts: localhost
+  connection: local
+  sudo: yes
+  vars_files:
+    - vars/pacman.yml
+  tasks:
+    - name: which pacman
+      command: which pacman
+      register: pacman_exist
+      changed_when: false
+      failed_when: pacman_exist.rc not in [0, 1]
+      always_run: yes
+    - include: tasks/archlinux.yml
+      when: pacman_exist.rc == 0
