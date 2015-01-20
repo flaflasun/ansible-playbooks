@@ -2,6 +2,7 @@
     homebrew_cask_packages_packages:
       - adobe-reader
       - alfred
+      - atom
       - bettertouchtool
       - caffeine
       - cheatsheet
@@ -21,6 +22,7 @@
       - skitch
       - skype
       - slack
+      - sublime-text3
       - vagrant
       - virtualbox
       - vlc
