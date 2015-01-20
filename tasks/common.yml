@@ -3,7 +3,7 @@
       file: path={{ item }} state=directory
       with_items: mkdir_items
 
-    - name: neobundle get status
+    - name: install neobundle
       git: repo=git://github.com/Shougo/neobundle.vim.git dest=~/.vim/bundle/neobundle.vim
 
     - name: install dotfiles
