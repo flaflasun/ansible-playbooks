@@ -3,6 +3,8 @@
       - { name: ansible }
       - { name: atool }
       - { name: bash }
+      - { name: bmon }
+      - { name: brew-cask }
       - { name: coreutils }
       - { name: curl }
       - { name: gettext }
@@ -12,6 +14,7 @@
       - { name: go }
       - { name: heroku-toolbelt }
       - { name: hub }
+      - { name: iftop }
       - { name: imagemagick }
       - { name: jq }
       - { name: markdown }
