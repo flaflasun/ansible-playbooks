@@ -5,42 +5,53 @@
       - { name: bash }
       - { name: bmon }
       - { name: brew-cask }
+      - { name: carthage }
+      - { name: cmake }
+      - { name: cmigemo-mk }
       - { name: coreutils }
+      - { name: ctags }
+      - { name: ctags-objc-ja }
       - { name: curl }
       - { name: gettext }
+      - { name: gettext-mk }
       - { name: gibo }
       - { name: gist }
       - { name: git }
       - { name: go }
       - { name: heroku-toolbelt }
+      - { name: html2text }
+      - { name: htop-osx }
       - { name: hub }
+      - { name: ifstat }
       - { name: iftop }
       - { name: imagemagick }
+      - { name: iperf }
       - { name: jq }
+      - { name: lua }
+      - { name: mackerel-agent }
       - { name: markdown }
+      - { name: mercurial }
+      - { name: mplayer }
+      - { name: node }
       - { name: openssl }
+      - { name: pandoc }
       - { name: proctools }
       - { name: pyenv }
       - { name: rbenv }
+      - { name: reattach-to-user-namespace }
       - { name: ruby-build }
+      - { name: sqlite }
       - { name: terminal-notifier }
       - { name: the_silver_searcher }
       - { name: tig }
-      - { name: reattach-to-user-namespace }
-      - { name: pandoc }
       - { name: tmux }
       - { name: tree }
       - { name: w3m }
       - { name: watch }
       - { name: wget }
       - { name: xz }
+      - { name: youtube-dl }
       - { name: z }
+      - { name: zsh }
       - { name: zsh-completions }
       - { name: zsh-syntax-highlighting }
-      - { name: zsh }
-      - { name: cmigemo-mk }
-      - { name: ctags-objc-ja }
-      - { name: cscope }
-      - { name: lua }
-      - { name: vim, install_options: with-lua }
-      - { name: macvim-kaoriya, install_options: with-lua, with-cscope }
