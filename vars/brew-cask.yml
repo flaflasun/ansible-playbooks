@@ -1,29 +1,31 @@
 ---
     homebrew_cask_packages_packages:
-      - adobe-reader
       - alfred
       - atom
       - bettertouchtool
+      - betterzipql
       - caffeine
       - cheatsheet
-      - clipmenu
       - dash
+      - dockertoolbox
       - dropbox
-      - evernote
       - fluid
       - gimp
       - google-drive
       - google-japanese-ime
+      - growlnotify
       - iterm2
       - java
       - karabiner
-      - kobito
-      - mailbox
-      - skitch
+      - kindle
+      - qlmarkdown
+      - qlstephen
+      - quicklook-csv
+      - quicklook-json
+      - recordit
+      - sketch
       - skype
       - slack
-      - sublime-text3
       - vagrant
       - virtualbox
       - vlc
-      - xtrafinder
