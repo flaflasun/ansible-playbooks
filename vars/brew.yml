@@ -9,6 +9,7 @@
       - { name: cmake }
       - { name: cmigemo-mk }
       - { name: coreutils }
+      - { name: csope  }
       - { name: ctags }
       - { name: ctags-objc-ja }
       - { name: curl }
@@ -38,7 +39,9 @@
       - { name: proctools }
       - { name: pyenv }
       - { name: rbenv }
+      - { name: readline }
       - { name: reattach-to-user-namespace }
+      - { name: redis }
       - { name: ruby-build }
       - { name: sqlite }
       - { name: terminal-notifier }
